@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+<body>
+    <nav>
+      <div class="nav-wrapper black">
+        <a href="index.html" class="brand-logo center">JSCorporation</a>
+      </div>
+    </nav>
+    <div id="conteudo"></div>
+      <div class="fixed-action-btn">
+        <a class="btn-floating btn-large blue">
+          <i class="large material-icons">apps</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red" id="add"><i class="material-icons">add</i></a></li>
+          <li><a class="btn-floating puple" id="init"><i class="material-icons">home</i></a></li>
+        </ul>
+    <div>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script src="./pages/home.js"></script>
+    <script src="./pages/add.js"></script>
+    
+    <script>
+      window.onload=()=>{
+        const conteudo=document.querySelector('#conteudo');
+
+          conteudo.innerHTML=home;
+          const btadd=document.querySelector('#add');
+          const bthome=document.querySelector('#init');
+
+        btadd.addEventListener('click',()=>{
+            conteudo.innerHTML=null;
+            conteudo.innerHTML=add;
+
+          const nome=document.querySelector('#nome');
+          const exibir=document.querySelector('#exibir');
+
+        nome.addEventListener('change',()=>{
+            console.log(nome.value);
+
+            exibir.innerHTML=nome.value;
+        })
+            })
+
+        bthome.addEventListener('click',()=>{
+            conteudo.innerHTML=null;
+            conteudo.innerHTML=home;
+        })
+      }
+      
+      document.addEventListener('DOMContentLoaded',()=>{
+          const elemento=document.querySelectorAll('.fixed-action-btn');
+          const instancia=M.FloatingActionButton.init(elemento);
+      })
+    </script>
+</body>
+</html>
