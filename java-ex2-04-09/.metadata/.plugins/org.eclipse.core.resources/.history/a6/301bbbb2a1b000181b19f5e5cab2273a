@@ -1,0 +1,50 @@
+package exercicio;
+
+public class Exercicio {
+
+	private int hora;
+	private int minuto;
+	private int segundo;
+
+		public Exercicio(){
+			this.hora = 01;
+			this.minuto = 01;
+			this.segundo = 01;
+		}
+		
+	public Exercicio(int h, int m, int s){
+		this();
+		
+		if((h >= 1 && h <=24)&&
+		(m >= 1 && m <=60)&&
+		(s >= 1 && s <=60)){
+			this.hora = h;
+			this.minuto = m;
+			this.segundo = s;
+			}
+		}
+		
+		public void sethora(int hora){
+			if(hora >= 1 && hora <= 24){
+				this.hora= hora;
+			}
+		}
+		
+		public void setminuto(int minuto){
+			if(minuto >= 1 && minuto <= 60){
+				this.minuto = minuto;
+			}
+		}
+		
+		public void setsegundo(int segundo){
+			if(segundo >= 1 && segundo <= 60){
+				this.segundo = segundo;
+			}
+		}
+		
+		public String toString(){
+			String Exercicio = hora + ":" + minuto + ":" + segundo;
+			return Exercicio;
+
+	}
+}

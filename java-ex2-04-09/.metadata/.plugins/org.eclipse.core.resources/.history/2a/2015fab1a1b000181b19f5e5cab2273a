@@ -1,0 +1,13 @@
+package exercicio;
+
+public class Principal {
+
+		public static void main(String[]args){
+			Exercicio h= new Exercicio();
+			h.sethora(23);
+			h.setminuto(47);
+			h.setsegundo(58);
+			System.out.println(h);
+	}
+}
+

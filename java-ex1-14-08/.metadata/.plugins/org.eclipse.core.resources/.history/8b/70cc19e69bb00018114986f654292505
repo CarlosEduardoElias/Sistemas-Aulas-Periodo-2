@@ -1,0 +1,12 @@
+package exercicio2;
+
+public class Principal {
+	
+		public static void main(String[]args){
+		Hora h= new Hora();
+		h.sethora(23);
+		h.setminuto(47);
+		h.setsegundo(58);
+		System.out.println(h);
+}
+}

@@ -1,0 +1,18 @@
+package br.com;
+
+import java.io.*;
+
+public class Teclado {
+	public static void main (String args[]) {
+		DataInputStream entrada = new DataInputStream(System.in);
+		String nome;
+		System.out.println("Informe seu nome: ");
+		try {
+			nome=entrada.readLine();
+			System.out.println("Seu nome é: " + nome);
+		} catch(IOException e){
+			System.out.println("Não foi possível ler seu nome.");
+		}
+	}
+}
+
