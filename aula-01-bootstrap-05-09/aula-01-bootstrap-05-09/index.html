@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+	<select id="cidades">
+		<!--<option value="">Selecione</option>
+		<option value="1">Carboneira</option>
+		<option value="2">Saltinho do Oeste</option>
+		<option value="3">Ercilância</option>
+		<option value="4">Nova Jerusalem</option>
+	-->
+	</select>
+	<ul id="lista">
+	</ul>
+	<script>
+		const cidades = 
+		[
+			{
+				id:'1',
+				local:'carboneira'
+			},
+						{
+				id:'2',
+				local:'saltinho do oeste'
+			},
+						{
+				id:'3',
+				local:'ercilandia'
+			},
+						{
+				id:'4',
+				local:'nova jerusalem'
+			}
+		]	
+
+		const local = document.querySelector('#cidades');
+		//const local = document.getElementById('cidades');
+		cidades.map((f)=>{
+			//console.log(f.local);
+			let opcao=`<option value=${f.id}>${f.local}</option>`;
+			console.log(opcao);
+			local.innerHTML +=opcao;
+		})
+
+		const sites = [
+			{
+				titulo:'Google',
+				url:'www.google.com.br'
+			},
+			{
+				titulo:'GitHub',
+				url:'www.github.com.br'
+			},
+			{
+				titulo:'Uol',
+				url:'www.uol.com.br'
+			},
+			{
+				titulo:'Youtube',
+				url:'www.youtube.com.br'
+			}
+		]
+
+		const lista = document.querySelector('#lista');
+		sites.map((f)=>{
+			let ul=`<li><a href="${f.url}">${f.titulo}</a></li>`;
+			console.log(lista);
+			lista.innerHTML +=ul;
+		})
+	</script>
+</body>
+</html>
