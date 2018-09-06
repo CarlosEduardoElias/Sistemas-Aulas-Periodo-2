@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <div class="container">
+      <div class="row" id="linha">
+      </div>
+     </div>
+    <script>
+      const linha = document.getElementById('linha');
+      const menu = 
+      [
+        {
+          img:'imagens/01.jpg',
+          texto: 'Financeiro'
+        },
+        {
+          img:'imagens/02.jpg',
+          texto: 'Produtos'
+        },
+        {
+          img:'imagens/03.jpg',
+          texto: 'Estoque'
+        },
+        {
+          img:'imagens/04.jpg',
+          texto: 'Clientes'
+        },
+        {
+          img:'imagens/05.jpg',
+          texto: 'Fornecedores'
+        },
+        {
+          img:'imagens/06.jpg',
+          texto: 'Colaboradores'
+        }
+      ]
+
+      menu.map((f)=>{
+        let item = `
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="${f.img}" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">${f.texto}</p>
+            </div>
+          </div>
+        </div>
+        `;
+        linha.innerHTML += item;
+      })
+    </script>
+    <script src="jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="pooper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
