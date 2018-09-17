@@ -14,6 +14,6 @@
 	$produto[5] = array("nome"=>"Mega Stacker Catupiry 2.0","imagem"=>"5.png","imagemg"=>"5g.png");
 	$produto[6] = array("nome"=>"Xhooper Duplo","imagem"=>"6.png","imagemg"=>"6g.png");
 	$produto[7] = array("nome"=>"Cheeseburger com Bacon","imagem"=>"7.png","imagemg"=>"7g.png");
-	$produto[8] = array("nome"=>"Picanha Barbecue Bacon","imagem"=>"8.png","imagemg"=>"88gt9g.png");
+	$produto[8] = array("nome"=>"Picanha Barbecue Bacon","imagem"=>"8.png","imagemg"=>"8g.png");
 	$produto[9] = array("nome"=>"Cheeseburger","imagem"=>"9.png","imagemg"=>"9g.png");
 	$produto[10] = array("nome"=>"Tripo Burger e Bacon","imagem"=>"10.png","imagemg"=>"10g.png");

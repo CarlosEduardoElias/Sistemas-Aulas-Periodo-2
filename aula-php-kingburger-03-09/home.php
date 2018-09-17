@@ -25,3 +25,14 @@
 	}
 
 	echo"</div>";
+
+?>
+<div class="clearfix">
+	<div class="pagina">
+		<p class="center">
+			<a href="index.php?pagina=cardapio" class="btn">
+				Ver todos os Lanches
+			</a>
+		</p>
+	</div>	
+</div>
