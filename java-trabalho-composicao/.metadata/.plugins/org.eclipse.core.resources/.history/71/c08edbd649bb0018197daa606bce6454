@@ -1,0 +1,8 @@
+package exemplos;
+
+public class Ciclista {
+	private String nome;
+	private String equipe;
+	private int numero;
+}
+

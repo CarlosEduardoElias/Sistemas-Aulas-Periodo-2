@@ -1,0 +1,8 @@
+package exemplos;
+
+public class Bike {
+	private String tipo;
+	private String modelo;
+	private String quadro;
+}
+

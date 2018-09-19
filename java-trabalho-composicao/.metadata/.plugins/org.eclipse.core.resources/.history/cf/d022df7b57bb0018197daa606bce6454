@@ -1,0 +1,33 @@
+package exemplos;
+
+public class Bike {
+	private String tipo;
+	private String modelo;
+	private String quadro;
+
+
+public Bike(String tipo, String modelo, String quadro, int aro) {
+	this.tipo = tipo;
+	this.modelo = modelo;
+	this.quadro = quadro;
+}
+
+public void tipo(String tipo) {
+	this.tipo = tipo;
+}
+
+public void modelo(String modelo) {
+	this.modelo = modelo;
+}
+
+public void quadro(String quadro) {
+	this.quadro = quadro;
+}
+
+
+public String toString() {
+	return  tipo + modelo + quadro;
+}
+
+
+}

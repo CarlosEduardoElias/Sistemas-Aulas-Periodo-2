@@ -1,0 +1,13 @@
+package exemplos;
+
+public class Bike {
+	private String tipo;
+	private String modelo;
+	private String quadro;
+	private int aro;
+
+
+public Bike(String tipo, String Modelo, String quadro, int aro) {
+	
+}
+}

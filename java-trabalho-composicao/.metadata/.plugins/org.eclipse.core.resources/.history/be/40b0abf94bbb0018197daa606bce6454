@@ -1,0 +1,18 @@
+package exemplos;
+
+public class Ciclista {
+	private String ciclista;
+	private String equipe;
+	private int numero;
+
+
+public Ciclista (String ciclista, String equipe, int numero) {
+	this.ciclista = ciclista;
+	this.equipe = equipe;
+	this.numero = numero;
+}
+
+public String toString() {
+	return ciclista + equipe + numero;
+}
+}

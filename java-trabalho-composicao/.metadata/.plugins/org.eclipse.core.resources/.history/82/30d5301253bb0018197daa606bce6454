@@ -1,0 +1,33 @@
+package exemplos;
+
+public class Competicao {
+	public static void main(String[]args) {
+		Ciclista c = new Ciclista(null, null, 0);
+		c.ciclista("nome");
+		c.equipe("doura");
+		c.numero(0);
+		System.out.println(c);
+		Bike b = new Bike(null, null, null, 0);
+		b.tipo("");
+		b.modelo("");
+		b.quadro("");
+		b.aro("");
+		System.out.println(b);
+	}
+
+}
+
+
+/*public class Principal {
+	public static void main(String[]args){
+		Data d= new Data();
+		d.setDia(25);
+		d.setMes(11);
+		d.setAno(1999);
+		System.out.println(d);
+		Hora h= new Hora();
+		h.sethora(11);
+		h.setminuto(35);
+		h.setsegundo(26);
+		System.out.println(h);		
+}*/
