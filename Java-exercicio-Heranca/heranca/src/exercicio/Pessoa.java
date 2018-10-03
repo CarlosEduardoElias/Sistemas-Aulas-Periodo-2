@@ -1,19 +1,20 @@
 package exercicio;
 
-public class Pessoa extends Endereco{
+public class Pessoa{
 	private String nome;
 	private String cpf;
 	private String rg;
+	private Endereco endereco;
 	
 public Pessoa(){
 	
 }
 
-public Pessoa(String endereco, String nome, String cpf, String rg) {
-	super(endereco);
+public Pessoa(String nome, String cpf, String rg, Endereco endereco) {
 	this.nome = nome;
 	this.cpf = cpf;
 	this.rg = rg;
+	this.setEndereco(endereco);
 }
 public String getNome() {
 	return nome;
@@ -33,12 +34,11 @@ public String getRg() {
 public void setRg(String rg) {
 	this.rg = rg;
 }
-
-public String toString() {
-	return "nome: " + getNome() + "\n"
-		+ "CPF: " + getCpf() + "\n"
-		+ "RG: " + getRg() + "\n"
-		+ "Endereco: " + getEndereco() + "\n";
+public String getEndereco() {
+	return endereco.getCidade();
+}
+public void setEndereco(Endereco endereco) {
+	this.endereco.setCidade(getEndereco());
 }
 }
 

@@ -1,0 +1,18 @@
+package exercicio;
+
+public class Professor {
+	private int codigo;
+	private float salario;
+	private String titulo;
+	private int cargahoraria;
+
+public Professor() {
+	
+}
+public Professor(int codigo, float salario, String titulo, int carga) {
+	this.codigo = codigo;
+	this.salario = salario;
+	this.titulo = titulo;
+	this.cargahoraria = carga;
+}
+}

@@ -1,0 +1,21 @@
+package exercicio;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Aluno aluno = new Aluno();
+		aluno.setNome("Carlos");
+		aluno.setCpf("098.546.669-79");
+		aluno.setRg("87.485.197");
+		aluno.setMatricula(8372);
+		aluno.setEndereco("Tapejara");
+		System.out.println("Dados do Aluno: " + "\n" + aluno);
+
+		Curso c = new Curso();
+		c.setNomeCurso("Sistemas");
+		System.out.println("Curso: \n \n"  + c);
+		
+		//Endereco end = new Endereco();
+		//end.setEndereco("endereco,rua real");
+	}
+}

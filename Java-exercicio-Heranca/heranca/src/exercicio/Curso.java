@@ -1,17 +1,20 @@
 package exercicio;
 
 public class Curso {
-	private String curso;
+	private String nomecurso;
 
 public Curso(){
 }
-public Curso(String curso) {
-	this.curso = curso;
+public Curso(String nomecurso) {
+	this.nomecurso = nomecurso;
 }
-public String getCurso() {
-	return curso;
+public String getNomeCurso() {
+	return nomecurso;
 }
-public void setCurso(String curso) {
-	this.curso = curso;
+public void setNomeCurso(String nomecurso) {
+	this.nomecurso = nomecurso;
+}
+public String toString() {
+	return getNomeCurso();
 }
 }

@@ -1,0 +1,25 @@
+package exercicio;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Aluno aluno = new Aluno();
+		aluno.setNome("Carlos");
+		aluno.setCpf("098.546.669-79");
+		aluno.setRg("87.485.197");
+		aluno.setMatricula(8372);
+		System.out.println("Dados do Aluno: " + "\n" + aluno);
+
+		Curso c = new Curso();
+		c.setNomeCurso("Sistemas");
+		System.out.println(c);
+		
+		Endereco end = new Endereco();
+		end.setCidade("endereco");
+		System.out.println("Endereço: " + end);
+		
+		Professor p = new Professor();
+		p.setCodigo(01);
+		System.out.println(p);
+	}
+}
