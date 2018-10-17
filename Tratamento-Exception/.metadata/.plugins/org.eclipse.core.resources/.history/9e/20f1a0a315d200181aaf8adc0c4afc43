@@ -1,0 +1,17 @@
+package exemplos_exceptions;
+
+import javax.swing.JOptionPane;
+
+public class Exception {
+	public static void main(String[] args) {
+		private int numero;
+	
+try {
+	numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número qualquer: "));
+	JOptionPane.showMessageDialog(null, "O número digitado foi: " + numero);
+} catch (Exception erro) {
+	JOptionPane.showMessageDialog(null,"Valor inválido digitado! Erro! ", + erro);
+}
+
+}
+}

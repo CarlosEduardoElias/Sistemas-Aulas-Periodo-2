@@ -1,0 +1,24 @@
+package exemplos_exceptions;
+
+import javax.swing.JOptionPane;
+	/*O programa pede pro usuário digitar um número e exibe o valor digitado,
+	porém se o usuário digitar uma letra, pode-se ocorrer vários erros
+	
+	Exemplo sem Exception*/
+	public class Exemplo_Normal {
+	
+		public static void main(String[] args) {
+			//declarando a variavel número do tipo inteiro
+			int numero;
+			
+			/*variável número vai ler e armazenar o valor digitado pelo usuário,
+			variável número vai converter o valor que o usuário digitou para string,
+			mas se o usuário digitar uma letra, ele vai tentar converter e perceber que não é um valor inteiro,
+			onde irá apresentar o erro!
+			Observação: a classe JOptionPane já aceita valores do tipo string*/
+			numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número qualquer: "));
+			//exibindo o número digitado
+			JOptionPane.showMessageDialog(null, "O número digitado foi: " + numero);
+		}
+}
+

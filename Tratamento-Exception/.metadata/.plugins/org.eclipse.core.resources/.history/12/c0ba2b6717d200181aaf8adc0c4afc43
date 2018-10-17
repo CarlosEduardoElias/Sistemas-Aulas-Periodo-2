@@ -1,0 +1,25 @@
+package exemplos_exceptions;
+
+import javax.swing.JOptionPane;
+
+public class Exemplo {
+	
+	public static void main(String[] args) {
+		//declarando a variavel numero do tipo inteiro
+		int numero;
+	
+		try {
+		//variavel numero vai ler e armazenar o numero digitado pelo usuario
+		//variavel numero vai converter o valor que o usuario digitou para string
+		//se o usuario digitar uma letra, ele vai tentar converter e perceber que não é um valor inteiro
+		//onde irá apresentar o erro
+			numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número qualquer: "));
+		//exibir o numero digitado
+			JOptionPane.showMessageDialog(null, "O número digitado foi: " + numero);
+		} catch (Exception erro) {
+			JOptionPane.showMessageDialog(null,"Valor inválido digitado! Erro! " + erro);
+		} finally { 
+			JOptionPane.showMessageDialog(null,"Fim");
+		} 
+	}
+}

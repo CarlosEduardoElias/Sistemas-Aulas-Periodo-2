@@ -1,0 +1,20 @@
+package exemplos_exceptions;
+
+import javax.swing.JOptionPane;
+/*O algoritmo pede pro usuario digitar um numero e exibe o numero digitado,
+porém se o usuario digitar uma letra, pode-se ocorrer varios erros
+
+Exemplo sem Exception*/
+public class Exemplo_Normal {
+	
+	public static void main(String[] args) {
+		//declarando a variavel numero do tipo inteiro
+		int numero;
+		
+			numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número qualquer: "));
+			JOptionPane.showMessageDialog(null, "O número digitado foi: " + numero);
+	
+		
+	}
+}
+

@@ -1,0 +1,37 @@
+package exemplos_exceptions;
+
+import javax.swing.JOptionPane;
+/*O algoritmo pede pro usuario digitar um numero e exibe o numero digitado,
+porém se o usuario digitar uma letra, pode-se ocorrer varios erros*/
+public class Exemplo_Normal {
+	
+	public static void main(String[] args) {
+		//declarando a variavel numero do tipo inteiro
+		int numero;
+		
+		/*trantando exceção com o try,
+		dentro do try ficam os codigos que podem ocorrer erros*/
+		try {
+		/*variavel numero vai ler e armazenar o valor digitado pelo usuario,
+		variavel numero vai converter o valor que o usuario digitou para string,
+		mas se o usuario digitar uma letra, ele vai tentar converter e perceber que não é um valor inteiro,
+		onde irá apresentar o erro!
+		Observação: a classe JOptionPane já aceita valores do tipo string*/
+			numero = Integer.parseInt(JOptionPane.showInputDialog("Digite um número qualquer: "));
+		//exibindo o numero digitado
+			JOptionPane.showMessageDialog(null, "O número digitado foi: " + numero);
+		/* O catch captura o erro ocorrido no try,
+		no caso passei um parâmetro Exception com o nome erro, sendo que o mesmo está se referindo a Exception*/
+		} catch (Exception erro) {
+		//mostrar mensagem e exibir o erro
+			JOptionPane.showMessageDialog(null,"Valor inválido digitado! Erro! " + erro);
+		/* O finally é adicional, não obrigatório,
+		porém pode ser util em algumas aplicações,
+		o finally será sempre executado independente se der erro ou não*/
+		} finally { 
+		//exibindo mensagem final 
+			JOptionPane.showMessageDialog(null,"Fim");
+		} 
+	}
+}
+
