@@ -1,0 +1,15 @@
+package exemplopilha;
+
+public class ExemploPilha {
+
+	public static void main(String[] args) {
+		Pilha pilha = new Pilha();
+		pilha.adicionar(10);
+		pilha.adicionar(12);
+		pilha.adicionar(30);
+		pilha.mostrar();
+		pilha.romover();
+		pilha.mostrar();
+	}
+
+}

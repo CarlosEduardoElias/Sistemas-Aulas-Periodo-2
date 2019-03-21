@@ -1,0 +1,41 @@
+body {
+	background-image: url(imagens/fundo.jpg); 
+	padding: 20px;
+}
+
+h1 {
+	font-family: Arial, Verdana, Tahoma;
+	font-size: 36px;
+	text-align: center;
+	color: #ff0000;
+}
+
+h2{
+	font-family: Arial, Verdana, Tahoma;
+	font-size: 24px;
+	text-align: center;
+	color: #ff0000;
+}
+
+p {
+	font-family: Arial, Verdana, Tahoma;
+	font-size: 18px;
+	text-align: justify;
+	color: #fff;
+}
+
+.l0{
+	float-left: 200px;
+}
+
+.l1{	
+	border: solid;
+	border-width: 10px;
+	color: #000;
+	margin: 10px;
+}
+
+.rodape {
+	float: center;
+	font-size: 15px;
+}

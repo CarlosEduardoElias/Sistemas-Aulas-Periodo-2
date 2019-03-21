@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+	margin: 0;
+	font: 13px Montserrat, Tahoma, Verdana;
+	padding-top: 70px;
+}
+
+header {
+	width: 100%;
+	/* Deixar transparente
+	background: rgba(255,255,255,0.5);
+	*/
+	background: #fff;
+	height: 70px;
+	position: fixed;
+	top: 0;
+	/* sombra - distancia distancia opacidade cor */
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.logo {
+	/* flutuar direita, esquerda*/
+	float: left;
+	margin: 20px;
+}
+
+nav {
+	float: right;
+	margin-top: 10px;
+}
+
+nav ul li {
+	display: inline;
+	margin: 5px;
+	padding: 5px;
+}
+
+nav ul li a {
+	color: #46ac63;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 15px;
+	text-transform: uppercase;
+	padding: 10px;
+	transition: all 1s;
+}
+
+nav ul li a:hover {
+	color: #fff;
+	background: #46ac63;
+}
+
+#banner {
+	background: #ccc;
+	text-align: center;
+	padding: 10px;
+}
+
+h1 {
+	text-align: center;
+	color: #46ac63;
+	font-size: 32px;
+}
+
+section {
+	padding-top: 30px;
+	padding-bottom: 30px; 
+}
+
+.container {
+	/* largura*/
+	width: 960px;
+	margin: auto;
+	display: flex;
+}
+
+#servicos {
+
+}
+
+#depoimentos {
+	/* colocar imagem de fundo */
+	background: url(imagens/bg.jpg) fixed;
+	color: #fff;
+	text-align: center;
+}
+
+#depoimentos img{
+	/* borda arredondada */
+	border-radius: 100%;
+	border: 5px solid #fff;
+	/* tipos de borda: solid, dashed, botted; */
+}
+
+#depoimentos p {
+	width: 100%;
+	margin: 20px;
+}
+
+#depoimentos .container {
+	display: block;
+}
+
+#clientes {
+
+}
+
+.coluna {
+	text-align: center;
+	width: 33%;
+}
+
+footer {
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #333;
+	color: #fff;
+}
+
+footer .coluna {
+	text-align: left;
+}
+
+footer a {
+	color: #fff;
+}
+
+.center {
+	text-align: center;
+	font-size: 14px;
+}
